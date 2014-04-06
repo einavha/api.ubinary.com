@@ -5,10 +5,10 @@ Ubinary public API documentation tree
 
 ### online/trading/bot
 
-[Buy me out](online/trading/bot/BuyMeOut.md)  
-[Flip](online/trading/bot/Flip.md)  
-[Login](online/trading/bot/Login.md)  
-[Open](online/trading/bot/Open.md)  
+[Login](online/trading/bot/login.md)  
+[Open position](online/trading/bot/position/open.md)  
+[Buy me out](online/trading/bot/position/buy-me-out.md)  
+[Flip](online/trading/bot/position/flip.md)  
 
 ### registration
 [Set user details](registration/SetUserDetails.md)
