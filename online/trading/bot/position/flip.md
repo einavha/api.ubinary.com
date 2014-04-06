@@ -1,8 +1,8 @@
-﻿## Login
+﻿## Flip position
 
 #### Request
 
-`GET http://.../online/trading/bot/login?data=JSON_DATA`
+`GET http://.../online/trading/bot/flip?data=JSON_DATA`
 
 where `JSON_DATA` is like
 

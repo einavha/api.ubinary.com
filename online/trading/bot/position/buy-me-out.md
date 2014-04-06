@@ -1,8 +1,8 @@
-﻿## Login
+﻿## Buy me out
 
 #### Request
 
-`GET http://.../online/trading/bot/login?data=JSON_DATA`
+`GET http://.../online/trading/bot/buy-me-out?data=JSON_DATA`
 
 where `JSON_DATA` is like
 
