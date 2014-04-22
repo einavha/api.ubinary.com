@@ -5,9 +5,9 @@
 - A white IPs list is required from your side
 
 #### Bot trading
-- Each bot has to login in order to open positions - [Login](login.md) API
+- Each bot has to login in order to open positions - [Login API](login.md)
 - Each login starts a session (sessions are periodically expired)
-- During the session bot is allowed to open positions - [Open position](position/open.md) API
+- During the session bot is allowed to open positions - [Open position API](position/open.md)
 
 #### Bot testing
 - Ubinary provides you with a test user
