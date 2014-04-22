@@ -1,0 +1,14 @@
+﻿## Bot integration
+
+#### Bot registration
+- Ubinary provides you with `BotId` and `LoginKey`
+- A white IPs list is required from your side
+
+#### Bot trading
+- Each bot has to login in order to open positions - [Login](login.md) API
+- Each login starts a session (sessions are periodically expired)
+- During the session bot is allowed to open positions - [Open position](position/open.md) API
+
+#### Bot testing
+- Ubinary provides you with a test user
+- Please use this [Bot trading test page](http://jsfiddle.net/ubinary/vWH5v/embedded/result/)

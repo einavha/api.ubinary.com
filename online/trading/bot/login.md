@@ -8,22 +8,49 @@ where `JSON_DATA` is like
 
 ```json
 {
+  "BotId": "<BOT_ID>",
+  "LoginKey": "<LOGIN_KEY>"
 }
 ```
 
 #### Response
 
-Status | Meaning           | Response body
--------|-------------------|-------------
-200    | successful        | JSON_RESPONSE
-400    | bad request (missing fields or wrong format) | has error description
-500    | Server side error | has error description
+Status | Response body
+-------|--------------
+200    | JSON_RESPONSE
 
 where `JSON_RESPONSE` is like
 
 ```json
 {
+  "SessionKey": "<SESSION_KEY>",
+  "Error": "<Error descrition if request fails>"
 }
 ```
+
+
+#### Successful response example
+
+```json
+{
+  "SessionKey": "77732467768c44bc8316ad21db46ef11",
+  "Error": null
+}```
+
+
+Status |Response body
+-------|-------------
+200    |JSON_RESPONSE
+
+
+#### Unsuccessful response example
+
+```json
+{
+  "SessionKey": null,
+  "Error": "BotId 'MyBot' is not registered"
+}
+```
+
 
 #### Expectations
