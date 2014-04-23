@@ -36,6 +36,15 @@ where `JSON_RESPONSE` is like
 }
 ```
 
+```C#
+{
+  string TrackingId;        // Tracking id for troubleshooting
+  int PositionId;           // Id of an successfully opened position
+  DateTime ExpirationAt;    // Comment": "Position expiration point
+  string Error;             // null if request succeeds, error description if request fails
+}
+```
+
 
 #### Successful response example
 
