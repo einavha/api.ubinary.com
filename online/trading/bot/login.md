@@ -1,15 +1,27 @@
 ﻿## Login
 
+[Try it online](http://api.ubinary.com/nunit/page/bots.html)
+
+
 #### Request
 
 GET http://api.ubinary.com/online/trading/bot/login?data=JSON_DATA
 
 where `JSON_DATA` is like
 
+```C#
+{
+    string BotId;               // Bot id (provided by Ubinary)
+    string LoginKey;            // Login key (provided by Ubinary)
+}
+```
+
+##### A valid request example
+
 ```json
 {
-  "BotId": "<BOT_ID>",
-  "LoginKey": "<LOGIN_KEY>"
+  "BotId": "MyBot",
+  "LoginKey": "MyLoginKey"
 }
 ```
 
@@ -22,19 +34,19 @@ Status | Response body
 
 where `JSON_RESPONSE` is like
 
-```json
+```C#
 {
-  "SessionKey": "A key bot should provide in order to open position",
-  "Error": "null if request succeeds, error description if request fails"}
+    string SessionKey;          // Session key to use in API calls
+    string Error;               // null if request succeeds, error description if request fails
+}
 ```
-
 
 #### Successful response example
 
 ```json
 {
-  "SessionKey": "77732467768c44bc8316ad21db46ef11",
-  "Error": null
+    "SessionKey": "77732467768c44bc8316ad21db46ef11",
+    "Error": null
 }
 ```
 

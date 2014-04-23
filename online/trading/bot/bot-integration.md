@@ -11,4 +11,4 @@
 
 #### Bot testing
 - Ubinary provides you with a test user
-- Please use this [Bot trading test page](http://jsfiddle.net/ubinary/vWH5v/embedded/result/)
+- Please use this [Bot trading test page](http://api.ubinary.com/nunit/page/bots.html)
