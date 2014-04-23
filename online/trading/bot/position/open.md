@@ -45,6 +45,15 @@ where `JSON_RESPONSE` is like
 }
 ```
 
+```Pascal
+{
+  TrackingId : String;      // Tracking id for troubleshooting
+  PositionId : Integer;     // Id of an successfully opened position
+  ExpirationAt : Date;      // Comment": "Position expiration point
+  Error : String;           // null if request succeeds, error description if request fails
+}
+```
+
 
 #### Successful response example
 
