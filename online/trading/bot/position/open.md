@@ -44,33 +44,16 @@ Status | Response body
 
 where `JSON_RESPONSE` is like
 
-```json
-{
-  "TrackingId": "String",                 Tracking id for troubleshooting
-  "PositionId": "Int",                    "Id of an successfully opened position",
-  "ExpirationAt": "Date",                 "Comment": "Position expiration point"
-  "Error": "String"                       // null if request succeeds, error description if request fails
-}
-```
-
 ```C#
 {
-  string TrackingId;        // Tracking id for troubleshooting
-  int PositionId;           // Id of an successfully opened position
-  DateTime ExpirationAt;    // Comment": "Position expiration point
-  string Error;             // null if request succeeds, error description if request fails
+  string TrackingId;            // Tracking id for troubleshooting
+  int PositionId;               // Id of an successfully opened position
+  DateTime ExpirationAt;        // Comment": "Position expiration point
+  string Error;                 // null if request succeeds, error description if request fails
 }
 ```
 
-```Pascal
-TrackingId : String;      { Tracking id for troubleshooting }
-PositionId : Integer;     { Id of an successfully opened position }
-ExpirationAt : Date;      // Comment": "Position expiration point
-Error : String;           // null if request succeeds, error description if request fails
-```
-
-
-#### Successful response example
+##### Successful response example
 
 ```json
 {
@@ -82,7 +65,7 @@ Error : String;           // null if request succeeds, error description if requ
 ```
 
 
-#### Unsuccessful response example
+##### Unsuccessful response example
 
 ```json
 {
