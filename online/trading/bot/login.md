@@ -13,6 +13,7 @@ where `JSON_DATA` is like
 }
 ```
 
+
 #### Response
 
 Status | Response body
@@ -23,9 +24,8 @@ where `JSON_RESPONSE` is like
 
 ```json
 {
-  "SessionKey": "<SESSION_KEY>",
-  "Error": "<Error descrition if request fails>"
-}
+  "SessionKey": "A key bot should provide in order to open position",
+  "Error": "null if request succeeds, error description if request fails"}
 ```
 
 
@@ -39,11 +39,6 @@ where `JSON_RESPONSE` is like
 ```
 
 
-Status |Response body
--------|-------------
-200    |JSON_RESPONSE
-
-
 #### Unsuccessful response example
 
 ```json
@@ -55,3 +50,5 @@ Status |Response body
 
 
 #### Expectations
+
+None

@@ -6,7 +6,7 @@
 
 #### Bot trading
 - Each bot has to login in order to open positions - [Login API](login.md)
-- Each login starts a session (sessions are periodically expired)
+- Each login starts a session (the session has an expiration timeout)
 - During the session bot is allowed to open positions - [Open position API](position/open.md)
 
 #### Bot testing

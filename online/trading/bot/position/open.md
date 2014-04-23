@@ -2,20 +2,20 @@
 
 #### Request
 
-GET http://api.ubinary.com/online/trading/bot/open?data=JSON_DATA
+GET http://api.ubinary.com/online/trading/bot/position/open?data=JSON_DATA
 
 where `JSON_DATA` is like
 
 ```json
 {
-  "BotId": "TestBot",
-  "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",
-  "UserId": "john@ub.com",
-  "UserPassword": "111111",
-  "Symbol": "EURUSD",
-  "AboveBelow": "Above",
-  "Duration": "0:0:30",
-  "Stake": 20
+  "BotId": "MyBotName",                                 // The same as in Login
+  "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",     // Provided by successful login 
+  "UserId": "john@ub.com",                              // User emaile or user id
+  "UserPassword": "111111",                             // User password
+  "Symbol": "EURUSD",                                   // Symbol of an asset to open position on
+  "AboveBelow": "Above",                                // Direction should be 'Above' or 'Below'
+  "Duration": "0:0:30",                                 // Position duration
+  "Stake": 20                                           // Position volume USD
 }
 ```
 
@@ -29,10 +29,10 @@ where `JSON_RESPONSE` is like
 
 ```json
 {
-  "TrackingId": "This request tracking id",
-  "PositionId": 123456,
-  "ExpirationAt": "Position expiration time",
-  "Error": "Error descrition if request fails"
+  "TrackingId": string,                 // Tracking id for troubleshooting
+  "PositionId": int,                    // Id of an successfully opened position
+  "ExpirationAt": date                  // Position expiration point
+  "Error": string                       // null if request succeeds, error description if request fails
 }
 ```
 
