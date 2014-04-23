@@ -1,5 +1,8 @@
 ﻿## Open position
 
+[Try it online](http://jsfiddle.net/ubinary/vWH5v/embedded/result/)
+
+
 #### Request
 
 GET http://api.ubinary.com/online/trading/bot/position/open?data=JSON_DATA
