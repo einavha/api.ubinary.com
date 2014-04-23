@@ -6,16 +6,33 @@ GET http://api.ubinary.com/online/trading/bot/position/open?data=JSON_DATA
 
 where `JSON_DATA` is like
 
+```C#
+{
+    enum EAboveBelow { Above, Below }
+
+    string BotId;               // Bot id (provided by Ubinary)
+    string SessionKey;          // Returned by a successful login   
+    string UserId;              // User email or user id (both are supported)
+    string UserPassword;        // User password
+    string Symbol;              // Symbol of a desired asset
+    EAboveBelow AboveBelow;     // Position direction should be 'Above' or 'Below'
+    decimal Stake;              // Position volume USD
+    TimeSpan Duration;          // Desired position duration
+}
+```
+
+##### A valid request example
+
 ```json
 {
-  "BotId": "MyBotName",                                 // The same as in Login
-  "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",     // Provided by successful login 
-  "UserId": "john@ub.com",                              // User emaile or user id
-  "UserPassword": "111111",                             // User password
-  "Symbol": "EURUSD",                                   // Symbol of an asset to open position on
-  "AboveBelow": "Above",                                // Direction should be 'Above' or 'Below'
-  "Duration": "0:0:30",                                 // Position duration
-  "Stake": 20                                           // Position volume USD
+  "BotId": "MyBotName",
+  "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",
+  "UserId": "john@ub.com",
+  "UserPassword": "111111",
+  "Symbol": "EURUSD",
+  "AboveBelow": "Above",
+  "Duration": "0:0:30",
+  "Stake": 20
 }
 ```
 
