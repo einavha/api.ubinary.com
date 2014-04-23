@@ -41,7 +41,7 @@ where `JSON_RESPONSE` is like
 }
 ```
 
-#### Successful response example
+##### Successful response example
 
 ```json
 {
@@ -51,7 +51,7 @@ where `JSON_RESPONSE` is like
 ```
 
 
-#### Unsuccessful response example
+##### Unsuccessful response example
 
 ```json
 {
