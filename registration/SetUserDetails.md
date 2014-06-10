@@ -7,9 +7,34 @@ GET http://api.ubinary.com/registration/set/user/details?data=JSON_DATA
 
 where `JSON_DATA` is like
 
+```C#
+{
+    int UserId;                     // should not be empty if UserGuid is empty
+    Guid UserGuid;                  // should not be empty if UserId is empty
+    DateTime DateOfBirth;
+    int EmployementStatus;
+    decimal AnnualIncome;
+    decimal NetWorth;
+    decimal BinaryExpirience;
+}
+```
+
+##### A valid request examples
+
 ```json    
 {
     "UserId": 291935,
+    "DateOfBirth": "27-April-1977",
+    "EmployementStatus": 1,
+    "AnnualIncome": 2,
+    "NetWorth": 3,
+    "BinaryExpirience": 1
+}
+```
+
+```json    
+{
+    "UserGuid": "F2092A4CBDA07907E040CA0A011430D9",
     "DateOfBirth": "27-April-1977",
     "EmployementStatus": 1,
     "AnnualIncome": 2,
