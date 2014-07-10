@@ -2,7 +2,7 @@
 
 Get all **changed** users between specified dates
 
-[Try it online](http://api.ubinary.com/nunit/page/spi_online.html)
+[Try it online](http://api.ubinary.com/nunit/page/online.html)
 
 
 #### Request
