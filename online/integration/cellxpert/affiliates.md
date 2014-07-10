@@ -1,18 +1,35 @@
-﻿## Login
+﻿## Affiliates
 
-[Try it online](http://api.ubinary.com/nunit/page/bots.html)
-
+Update affiliate details
 
 #### Request
 
-GET http://api.ubinary.com/online/trading/bot/login?data=JSON_DATA
+POST http://api.ubinary.com/online/integration/cellxpert/update/affiliates
+
 
 where `JSON_DATA` is like
 
 ```C#
 {
-    string BotId;               // Bot id (provided by Ubinary)
-    string LoginKey;            // Login key (provided by Ubinary)
+    AffiliateDetails[] Affiliates;      // array of affiliate ditails
+}
+
+AffiliateDetails
+{
+    int AffProgramId;
+    int AffiliateId;
+    string UserName;
+    string Email;
+    string FirstName;
+    string LastName;
+    string CountryCode;
+    string WebSite;
+    AffiliateStatusId StatusId;
+}
+
+enum AffiliateStatusId
+{
+    Active = 1
 }
 ```
 
@@ -20,8 +37,7 @@ where `JSON_DATA` is like
 
 ```json
 {
-  "BotId": "MyBot",
-  "LoginKey": "MyLoginKey"
+    ...
 }
 ```
 
@@ -36,29 +52,24 @@ where `JSON_RESPONSE` is like
 
 ```C#
 {
-    string SessionKey;          // Session key to use in API calls
-    string Error;               // null if request succeeds, error description if request fails
+    int CreatedCount;
+    int UpdatedCount;
+    int FailedCount;
 }
 ```
 
-##### Successful response example
+##### Response example
 
 ```json
 {
-    "SessionKey": "77732467768c44bc8316ad21db46ef11",
-    "Error": null
+    ...
 }
 ```
 
 
-##### Unsuccessful response example
+#### Access restrictions
 
-```json
-{
-  "SessionKey": null,
-  "Error": "BotId 'MyBot' is not registered"
-}
-```
+- White IP list
 
 
 #### Expectations

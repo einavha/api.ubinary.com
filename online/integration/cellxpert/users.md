@@ -7,7 +7,7 @@ Get all **changed** users between specified dates
 
 #### Request
 
-GET http://api.ubinary.com/online/integration/spi/users?data=JSON_DATA
+GET http://api.ubinary.com/online/integration/cellxpert/users?data=JSON_DATA
 
 where `JSON_DATA` is like
 
@@ -48,7 +48,7 @@ where `JSON_RESPONSE` is like
     int HasMoreData;            //     if there is more data
 }
 
-class UserInfo
+UserInfo
 {
     int UserId;
     string Email;
@@ -92,31 +92,14 @@ class UserInfo
 
 ##### Successful response example with consequent request for remaining data
 
+```json
 {
-  "Users": [
-    {
-      "UserId": 271250,
-      "Email": "vicentecolombini@gmail.com",
-      "UserGroupId": 10914,
-      "BusinessUnitId": 10293,
-      "UserGroupName": "micro (Ubinary)",
-      "Status": "Active",
-      "CreatedAt": "2014-01-05 13:20:15",
-      "UpdatedAt": "2014-04-21 21:52:49",
-      "AffProgramId": 1,
-      "UserName": "Vicente M Colombini",
-      "UserPhone": "+31-65-1700812",
-      "AffiliateId": 4866
-    },
-    {
-      "UserId": 271250,
-      ...
-    },
-    ...
-  ],
   "PagingIndex": 101,
-  "HasMoreData": 1
+  "HasMoreData": 1,
+  "Users": [
+    ...
 }
+```
 
 
 ```json
@@ -133,7 +116,6 @@ class UserInfo
 
 - Each request may retrieve up to one hundred items
 - White IP list
-- Token validation
 
 
 #### Expectations

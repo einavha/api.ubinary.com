@@ -1,13 +1,13 @@
-﻿## Funds
+﻿## Positions
 
-Get all fund transactions between specified dates
+Get all positions opened between specified dates
 
 [Try it online](http://api.ubinary.com/nunit/page/online.html)
 
 
 #### Request
 
-GET http://api.ubinary.com/online/integration/cellxpert/funds?data=JSON_DATA
+GET http://api.ubinary.com/online/integration/cellxpert/positions?data=JSON_DATA
 
 where `JSON_DATA` is like
 
@@ -42,30 +42,23 @@ where `JSON_RESPONSE` is like
 
 ```C#
 {
-    FundTransaction[] Users;    // an array of retrieved transactions
+    PositionInfo[] Positions;   // an array of retrieved positions
     int PagingIndex;            // should be used in a consequent request
     int HasMoreData;            //     if there is more data
 }
 
-FundTransaction
+PositionInfo
 {
-    int TransactionId;
     int UserId;
-    string UserName;
-    string UserEmail;
-    string UserPhone;
-    int AffiliateId;
-    int UserGroupId;
-    int BusinessUnitId;
-    decimal DepositAmount;
-    string CompletionTimestamp;
-    TransactionType TransactionType;
-    string Comment;
-}
-
-enum TransactionType
-{
-    Order, Refund, Bonus
+    string Email;
+    int PositionId;
+    string Asset;
+    string Dir;
+    decimal Volume;
+    string Result;
+    decimal Pnl;
+    string CreatedAt;
+    string ClosedAt;
 }
 ```
 
@@ -73,22 +66,20 @@ enum TransactionType
 
 ```json
 {
-  "HasMoreData": 0,
-  "PagingIndex": 10,
-  "Transactions": [
+  "HasMoreData": 1,
+  "PagingIndex": 101,
+  "Positions": [
     {
-      "TransactionId": 661344,
-      "UserId": 308237,
-      "UserName": "talal forayh",
-      "UserEmail": "tal_138@hotmail.com",
-      "UserPhone": "+966-550-091177",
-      "AffiliateId": 0,
-      "UserGroupId": 10894,
-      "BusinessUnitId": 10454,
-      "DepositAmount": 2000,
-      "CompletionTimestamp": "2014-04-21 10:05:09",
-      "TransactionType": "Order",
-      "Comment": "hassan"
+      "UserId": 131252,
+      "Email": "cdibley@hotmail.com",
+      "PositionId": 700383,
+      "Asset": "Gold",
+      "Dir": "Below",
+      "Volume": 70,
+      "Result": "Loss",
+      "Pnl": -66.5,
+      "OpenedAt": "2014-04-21 12:59:25",
+      "ClosedAt": "2014-04-21 13:09:26"
     },
     ...
   ]
@@ -101,7 +92,7 @@ enum TransactionType
 {
   "PagingIndex": 101,
   "HasMoreData": 1
-  "Transactions": [
+  "Positions": [
     ...
 }
 ```
