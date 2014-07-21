@@ -1,8 +1,8 @@
-﻿## Funds
+﻿## Snapshot
 
-Get all fund transactions between specified dates
+Get various feeds per asset ...
 
-[Try it online](http://api.ubinary.com/nunit/page/online.html)
+[Try it online](...)
 
 
 #### Request
