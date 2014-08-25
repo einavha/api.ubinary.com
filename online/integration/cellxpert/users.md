@@ -62,8 +62,31 @@ UserInfo
     string UserName;
     string UserPhone;
     int AffiliateId;
+    string ActivationDate;
+    string AdServer;            // A free parameter affiliate passes with registration
+    string CountryCode;         // ISO two letters country code
+    int Eligible;               // 1 - eligible
+    string SalesStatus;         // see statuses below
 }
 ```
+
+Sales statuse |
+-------------
+New |
+NoAnswer |
+CallInAWhile |
+PaymentSuccessful |
+SelfActivation |
+NoInterest |
+VoiceMail |
+Unreachable |
+CcClearanceFailed |
+PotentialSpy |
+ForexTrader |
+NotConverted |
+SecondChance |
+
+
 
 ##### Successful response example
 
