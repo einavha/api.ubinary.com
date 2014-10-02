@@ -2,7 +2,7 @@
 
 #### Request
 
-GET http://api.dev.ubinary.com/bm/client/event/DEVICE_ID/SESSION_ID/VERSION/WORKFLOW/ACTION/LABEL
+GET http://api.ubinary.com/bm/client/event/DEVICE_ID/SESSION_ID/VERSION/WORKFLOW/ACTION/LABEL
 
 where 
   - DEVICE_ID: string - random cookie based device id
