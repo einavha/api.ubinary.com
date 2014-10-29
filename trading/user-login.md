@@ -11,8 +11,8 @@ where `JSON_DATA` is like
 
 ```C#
 {
-    string UserEmail;               // Bot id (provided by Ubinary)
-    string UserPassword;            // Login key (provided by Ubinary)
+    string UserEmail;               // user's email
+    string UserPassword;            // user's password
 }
 ```
 
@@ -21,7 +21,7 @@ where `JSON_DATA` is like
 ```json
 {
   "UserEmail": "john@company.com",
-  "LoginKey": "111111"
+  "UserPassword": "111111"
 }
 ```
 
@@ -67,3 +67,7 @@ where `JSON_RESPONSE` is like
 #### Expectations
 
 None
+
+#### Access restrictions
+
+None (public)
