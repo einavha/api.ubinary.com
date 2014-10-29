@@ -1,11 +1,11 @@
-﻿## Login
+﻿## Bot login
 
 [Try it online](http://api.ubinary.com/nunit/page/bots.html)
 
 
 #### Request
 
-GET http://api.ubinary.com/online/trading/bot/login?data=JSON_DATA
+GET http://api.ubinary.com/trading/bot/login?data=JSON_DATA
 
 where `JSON_DATA` is like
 
