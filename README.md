@@ -3,14 +3,16 @@ api.ubinary.com
 
 Ubinary public API documentation tree
 
-### online/trading/bot
+### trading
 
-[Bot integration guide](online/trading/bot/bot-integration.md)  
-[Login](online/trading/bot/login.md)  
-[Open position](online/trading/bot/position/open.md)  
-[Buy me out](online/trading/bot/position/buy-me-out.md)  
-[Flip](online/trading/bot/position/flip.md)  
+[Bot integration guide](trading/readme.md)  
+[User login](trading/user-login.md)  
+[Bot login](trading/bot-login.md)  
+[Open position](trading/open-position.md)  
+[Buy me out](trading/buy-me-out.md)  
+[Flip](trading/flip.md)  
 
-### registration
-[Set user details](registration/SetUserDetails.md)
+### Leads and users
+[User login](trading/user-login.md)  
+[Set user details](leads-and-users/SetUserDetails.md)
 
