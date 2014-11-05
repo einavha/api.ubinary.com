@@ -52,6 +52,7 @@
     <None Include="trading\buy-me-out.md" />
     <None Include="trading\flip.md" />
     <None Include="trading\get-trading-options.md" />
+    <None Include="trading\get-user-balance.md" />
     <None Include="trading\open-position.md" />
     <None Include="trading\readme.md" />
     <None Include="trading\user-login.md" />

@@ -5,7 +5,7 @@
 
 #### Request
 
-GET http://api.ubinary.com/online/trading/bot/position/open?data=JSON_DATA
+GET http://api.ubinary.com/online/trading/bot/open/position?data=JSON_DATA
 
 where `JSON_DATA` is like
 
@@ -61,9 +61,10 @@ where `JSON_RESPONSE` is like
 ```json
 {
     "TrackingId": "d24d7427bd6b431e8ee46aa84dd56ddd",
+    "ErrorCode": null,
+    "ErrorMessage": null,
     "PositionId": 674191,
     "ExpirationAt": "22-Apr-2014 16:07:36",
-    "Error": null
 }
 ```
 
@@ -73,9 +74,10 @@ where `JSON_RESPONSE` is like
 ```json
 {
     "TrackingId": "a8654255cf1745b899f517b7b3ebdc3d",
+    "ErrorCode": "Failed",
+    "ErrorMessage": "User 299216 (bot@ub.com): login failed; password is wrong"
     "PositionId": 0,
     "ExpirationAt": "01-Jan-0001 00:00:00",
-    "Error": "User 299216 (bot@ub.com): login failed; password is wrong"
 }
 ```
 
