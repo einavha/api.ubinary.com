@@ -5,7 +5,7 @@
 
 #### Request
 
-GET http://api.ubinary.com/online/trading/user/get/balance?data=JSON_DATA
+GET http://api.ubinary.com/trading/user/get/balance?data=JSON_DATA
 
 where `JSON_DATA` is like
 
