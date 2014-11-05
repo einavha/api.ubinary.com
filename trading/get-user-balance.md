@@ -11,8 +11,6 @@ where `JSON_DATA` is like
 
 ```C#
 {
-    enum EAboveBelow { Above, Below }
-
     string BotId;               // Bot id (provided by Ubinary)
     string SessionKey;          // Returned by a successful login   
     string UserEmail;           // User email
@@ -56,8 +54,8 @@ where `JSON_RESPONSE` is like
     "ErrorCode": null,
     "ErrorMessage": null,
     "Balance": 5661.95,
-    "Stakes": 0,
-    "FreeBalance": 5661.95
+    "Stakes": 100,
+    "FreeBalance": 5561.95
 }
 ```
 
