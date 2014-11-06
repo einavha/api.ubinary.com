@@ -1,4 +1,4 @@
-﻿## Open position
+﻿## Get user balance
 
 [Try it online](http://api.ubinary.com/nunit/page/bots.html)
 
