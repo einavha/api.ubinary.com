@@ -12,7 +12,6 @@ where `JSON_DATA` is like
 ```C#
 {
     string BotId;               // Bot id (provided by Ubinary)
-    string SessionKey;          // Returned by a successful login   
     string UserEmail;           // User email
 }
 ```
@@ -22,7 +21,6 @@ where `JSON_DATA` is like
 ```json
 {
     "BotId": "MyBotName",
-    "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",
     "UserEmail": "john@ub.com",
 }
 ```
@@ -40,9 +38,13 @@ where `JSON_RESPONSE` is like
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // null if request succeeds, short error code if request fails
     string ErrorMessage;          // error description if request fails
+    string UserName;              // user name (email)
+    string FirstName;
+    string LastName;
     decimal Balance;              // user's balance
     decimal FreeBalance;          // user's free balance (balance minus open positions)
     decimal Stakes;               // sum of user's open positions
+    decimal Pnl;                  // accumulated PNL of a user
 }
 ```
 
@@ -50,12 +52,17 @@ where `JSON_RESPONSE` is like
 
 ```json
 {
-    "TrackingId": "d24d7427bd6b431e8ee46aa84dd56ddd",
+    "TrackingId": "12.34.56",
     "ErrorCode": null,
     "ErrorMessage": null,
+    "UserName": "john@company.com",
+    "FirstName": "John",
+    "LastName": "Smith",
     "Balance": 5661.95,
+    "FreeBalance": 5561.95,
     "Stakes": 100,
-    "FreeBalance": 5561.95
+    "FreeBalance": 5561.95,
+    "Pnl": -2345.78
 }
 ```
 
@@ -73,5 +80,5 @@ where `JSON_RESPONSE` is like
 
 #### Expectations
 
-- Bot is loged in
-- Bot session key is not expired
+- bot is active
+- white IP list
