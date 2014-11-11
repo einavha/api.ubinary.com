@@ -34,6 +34,9 @@ Status | Response body
 where `JSON_RESPONSE` is like
 
 ```C#
+
+enum EligibilityStatus { Eligible, NotEligible }
+
 {
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // null if request succeeds, short error code if request fails
@@ -44,7 +47,8 @@ where `JSON_RESPONSE` is like
     decimal Balance;              // user's balance
     decimal FreeBalance;          // user's free balance (balance minus open positions)
     decimal Stakes;               // sum of user's open positions
-    decimal Pnl;                  // accumulated PNL of a user
+    decimal Pnl;                  // accumulated PNL of a 
+    string Eligibility;           // values: Eligible, NotEligible
 }
 ```
 
@@ -62,7 +66,8 @@ where `JSON_RESPONSE` is like
     "FreeBalance": 5561.95,
     "Stakes": 100,
     "FreeBalance": 5561.95,
-    "Pnl": -2345.78
+    "Pnl": -2345.78,
+    "Eligibility": "Eligible"
 }
 ```
 
