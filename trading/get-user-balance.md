@@ -41,6 +41,7 @@ enum EligibilityStatus { Eligible, NotEligible }
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // null if request succeeds, short error code if request fails
     string ErrorMessage;          // error description if request fails
+    int UserId;                   // user id
     string UserName;              // user name (email)
     string FirstName;
     string LastName;
@@ -59,6 +60,7 @@ enum EligibilityStatus { Eligible, NotEligible }
     "TrackingId": "12.34.56",
     "ErrorCode": null,
     "ErrorMessage": null,
+    "UserId": 123456,
     "UserName": "john@company.com",
     "FirstName": "John",
     "LastName": "Smith",
