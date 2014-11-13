@@ -12,7 +12,7 @@ where `JSON_DATA` is like
 ```C#
 {
     string BotId;               // Bot id (provided by Ubinary)
-    string UserEmail;           // User email
+    string UserEmail;           // User email or user id
 }
 ```
 
@@ -22,6 +22,13 @@ where `JSON_DATA` is like
 {
     "BotId": "MyBotName",
     "UserEmail": "john@ub.com",
+}
+```
+
+```json
+{
+    "BotId": "MyBotName",
+    "UserEmail": 123456,
 }
 ```
 
@@ -39,7 +46,7 @@ enum EligibilityStatus { Eligible, NotEligible }
 
 {
     string TrackingId;            // Tracking id for troubleshooting
-    string ErrorCode;             // null if request succeeds, short error code if request fails
+    string ErrorCode;             // "Ok" if request succeeds, short error code if request fails
     string ErrorMessage;          // error description if request fails
     int UserId;                   // user id
     string UserName;              // user name (email)
@@ -58,7 +65,7 @@ enum EligibilityStatus { Eligible, NotEligible }
 ```json
 {
     "TrackingId": "12.34.56",
-    "ErrorCode": null,
+    "ErrorCode": "Ok",
     "ErrorMessage": null,
     "UserId": 123456,
     "UserName": "john@company.com",
