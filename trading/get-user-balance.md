@@ -1,7 +1,5 @@
 ﻿## Get user balance
 
-[Try it online](http://api.ubinary.com/nunit/page/bots.html)
-
 
 #### Request
 
@@ -57,6 +55,12 @@ enum EligibilityStatus { Eligible, NotEligible }
     decimal Stakes;               // sum of user's open positions
     decimal Pnl;                  // accumulated PNL of a 
     string Eligibility;           // values: Eligible, NotEligible
+    bool HasDeposits;             // 'true' if first time deposit is done, 'false' otherwise
+    string Country,               // currently is not availible (use CountryCode)
+    string CountryCode,           // two letters country code
+    string Phone,                 // user's phone number
+    Date RegistrationDate,        // user's registration (creation) date and time (YYYY-MM-DD hh:mm:ss)
+    Date FirstDepositDate         // user's first deposit date and time (YYYY-MM-DD hh:mm:ss)
 }
 ```
 
@@ -76,7 +80,13 @@ enum EligibilityStatus { Eligible, NotEligible }
     "Stakes": 100,
     "FreeBalance": 5561.95,
     "Pnl": -2345.78,
-    "Eligibility": "Eligible"
+    "Eligibility": "Eligible",
+    "HasDeposits": true,
+    "Country": null,
+    "CountryCode": "GB",
+    "Phone": "+972-54-123456",
+    "RegistrationDate": "2014-02-10 07:29:54",
+    "FirstDepositDate": "2014-02-10 09:49:59"
 }
 ```
 
