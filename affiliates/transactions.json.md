@@ -1,8 +1,9 @@
-﻿## Users (leads) report
+﻿## Users' transactions report
 
-Get all **changed** users between specified dates
+Get fund transactions between specified dates
 
-GET http://api.ubinary.com/reports/affiliate/AFF_ID/accounts.json?from=FROM_DATE&to=TO_DATE&PagingIndex=PAGING_INDEX
+GET http://api.ubinary.com/online/integration/spi/users?data=JSON_DATA
+
 
 where parameters are
 
@@ -12,7 +13,6 @@ AFF_ID          | integer                 | Your affiliate ID number
 FROM_DATE       | 'yyyy-MM-dd HH:mm:ss'   | Start from this date
 FROM_TO         | 'yyyy-MM-dd HH:mm:ss'   | Until this date
 PAGING_INDEX    | integer                 | 1 for first request, PagingIndex from a response if its HasMoreData is true
-
 
 #### Response
 
@@ -26,17 +26,18 @@ where `JSON_RESPONSE` is like
 {
     int PagingIndex;            // should be used in a consequent request
     int HasMoreData;            //     if there is more data
-    Account[] Accounts;         // an array of retrieved users
+    Transaction[] Transactions; // an array of retrieved transactions
 }
 
-class Account
+class Transaction
 {
-    DateTime TransactionDate;   // Lead creation date
-    string cTag;                // the ad_server parameter sent with registration API
-    int AccountID;              // Unique account ID
-    string Type;                // 'lead' or 'user' (a user is a lead with one successful login)
-    string FirstName;
-    string LastName;
+    string TransactionDate;
+    string CTag;
+    int AccountID;
+    int TransactionID;
+    string ActionName;
+    double Amount;
+    string Coin;
 }
 ```
 
@@ -45,18 +46,18 @@ class Account
 ```
 {
   "HasMoreData": 0,
-  "PagingIndex": 8,
-  "Accounts": [
+  "PagingIndex": 5,
+  "Transactions": [
     {
-      "TransactionDate": "2014-11-08 13:35:42",
+      "TransactionDate": "2014-11-06 13:21:48",
       "CTag": null,
-      "AccountID": 414098,
-      "Type": "user",
-      "FirstName": "janet",
-      "LastName": "polli"
+      "AccountID": 413003,
+      "TransactionID": 810064,
+      "ActionName": "deposit",
+      "Amount": 250,
+      "Coin": "USD"
     },
     ...
-  ]
 }
 ```
 
@@ -66,13 +67,13 @@ class Account
 
 In the first request PagingIndex should be 1
 
-http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=1
+http://api.ubinary.com/reports/affiliate/12345/transactions.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=1
 
 ```
 {
   "HasMoreData": 1,
   "PagingIndex": 101,
-  "Accounts": [
+  "Transactions": [
     ...
   ]
 ```
@@ -81,13 +82,13 @@ Response indicates that there is more data - `HasMoreData` is 1
 
 In the next request use PagingIndex from the response above
 
-http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=101
+http://api.ubinary.com/reports/affiliate/12345/transactions.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=101
 
 ```
 {
   "HasMoreData": 0,
   "PagingIndex": 154,
-  "Accounts": [
+  "Transactions": [
     ...
   ]
 ```
@@ -107,3 +108,4 @@ None
 
 #### Access restrictions
 - White IP list
+
