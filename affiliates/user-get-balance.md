@@ -12,7 +12,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
 
 ##### A valid request example
 
-http://api.stage.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"qa@ub.com"} 
+http://api.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"qa@ub.com"} 
 
 ```json
 {
@@ -20,7 +20,7 @@ http://api.stage.ubinary.com/trading/affiliate/12345/user/get/balance?data={"Use
 }
 ```
 
-http://api.stage.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"123456"} 
+http://api.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"123456"} 
 
 ```json
 {
