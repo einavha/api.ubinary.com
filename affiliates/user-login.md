@@ -11,7 +11,11 @@ where `JSON_DATA` is like
 }
 ```
 
+
 ##### A valid request example
+
+http://api.ubinary.com/trading/user/login?data={"UserEmail":"john@company.com","UserPassword":"111111"}
+
 
 ```json
 {
