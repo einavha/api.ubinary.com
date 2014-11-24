@@ -6,7 +6,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
 
 ```C#
 {
-    string UserId;              // not yet supported
+    string UserId;              // not supported yet
 }
 ```
 
@@ -16,7 +16,7 @@ http://api.ubinary.com/trading/affiliate/12345/user/get/open/positions?data={"Us
 
 ```json
 {
-    "UserId": "",
+    "UserId": ""
 }
 ```
 
@@ -43,7 +43,7 @@ class Option
     Deal[] Deals;
 }
 
-public class Deal
+class Deal
 {
     public int DealId;
     public DateTime StartAt;

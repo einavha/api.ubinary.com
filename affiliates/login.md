@@ -69,5 +69,7 @@ where `JSON_RESPONSE` is like
 ```
 
 #### Expectations
-
 None
+
+#### Access restrictions
+- White IP list

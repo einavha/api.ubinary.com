@@ -79,7 +79,7 @@ where `JSON_RESPONSE` is like
 
 
 #### Expectations
-- Affiliate is loged in
+- Affiliate is logged in
 
 #### Access restrictions
 - White IP list
