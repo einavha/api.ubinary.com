@@ -2,7 +2,7 @@
 
 GET http://api.ubinary.com/trading/affiliate/12345/user/get/balance?data=JSON_DATA
 
-where 12345 - is your affiliate id and `JSON_DATA` is like
+where `12345` - is your affiliate id and `JSON_DATA` is like
 
 ```C#
 {
@@ -12,11 +12,15 @@ where 12345 - is your affiliate id and `JSON_DATA` is like
 
 ##### A valid request example
 
+http://api.stage.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"qa@ub.com"} 
+
 ```json
 {
     "UserId": "john@ub.com",
 }
 ```
+
+http://api.stage.ubinary.com/trading/affiliate/12345/user/get/balance?data={"UserId":"123456"} 
 
 ```json
 {
@@ -33,9 +37,6 @@ Status | Response body
 where `JSON_RESPONSE` is like
 
 ```C#
-
-enum EligibilityStatus { Eligible, NotEligible }
-
 {
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // "Ok" if request succeeds, short error code if request fails
