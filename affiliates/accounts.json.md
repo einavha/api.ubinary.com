@@ -40,7 +40,9 @@ class Account
 }
 ```
 
-#### Successful response example
+#### Successful request / response example
+
+http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=1
 
 ```
 {
@@ -72,9 +74,8 @@ http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:
 {
   "HasMoreData": 1,
   "PagingIndex": 101,
-  "Accounts": [
-    ...
-  ]
+  ...
+}
 ```
 
 Response indicates that there is more data - `HasMoreData` is 1
@@ -87,9 +88,8 @@ http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:
 {
   "HasMoreData": 0,
   "PagingIndex": 154,
-  "Accounts": [
-    ...
-  ]
+  ...
+}
 ```
 
 Response indicates that there is no more data - `HasMoreData` is 0

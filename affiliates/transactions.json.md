@@ -1,8 +1,8 @@
-﻿## Users' transactions report
+﻿## Transactions report
 
 Get fund transactions between specified dates
 
-GET http://api.ubinary.com/online/integration/spi/users?data=JSON_DATA
+GET http://api.ubinary.com/reports/affiliate/AFF_ID/transactions.json?from=FROM_DATE&to=TO_DATE&PagingIndex=PAGING_INDEX
 
 
 where parameters are
@@ -41,7 +41,9 @@ class Transaction
 }
 ```
 
-#### Successful response example
+#### Successful request / response example
+
+http://api.ubinary.com/reports/affiliate/12345/transactions.json?from=2014-10-01 00:00:00&to=2014-11-25 00:00:00&PagingIndex=1
 
 ```
 {
@@ -58,6 +60,7 @@ class Transaction
       "Coin": "USD"
     },
     ...
+  ]
 }
 ```
 
@@ -73,9 +76,8 @@ http://api.ubinary.com/reports/affiliate/12345/transactions.json?from=2014-10-01
 {
   "HasMoreData": 1,
   "PagingIndex": 101,
-  "Transactions": [
-    ...
-  ]
+  ...
+}
 ```
 
 Response indicates that there is more data - `HasMoreData` is 1
@@ -88,9 +90,8 @@ http://api.ubinary.com/reports/affiliate/12345/transactions.json?from=2014-10-01
 {
   "HasMoreData": 0,
   "PagingIndex": 154,
-  "Transactions": [
-    ...
-  ]
+  ...
+}
 ```
 
 Response indicates that there is no more data - `HasMoreData` is 0
