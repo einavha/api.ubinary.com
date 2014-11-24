@@ -39,7 +39,7 @@ class UserInfo
 }
 ```
 
-##### Paging index sample
+#### Paging index sample
 
 *CAUTION:* PagingIndex is not the index of a desired page
 
@@ -52,11 +52,11 @@ http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:
   "HasMoreData": 1,
   "PagingIndex": 101,
   "Accounts": [
-    . . .
+    ---
   ]
 ```
 
-Response indicates that there is more data - HasMoreData is 1
+Response indicates that there is more data - `HasMoreData` is 1
 
 In the next request use PagingIndex from the response above
 
@@ -67,13 +67,13 @@ http://api.ubinary.com/reports/affiliate/12345/accounts.json?from=2014-10-01 00:
   "HasMoreData": 0,
   "PagingIndex": 154,
   "Accounts": [
-    ...
+    ---
   ]
 ```
 
-Response indicates that there is no more data - HasMoreData is 0
+Response indicates that there is no more data - `HasMoreData` is 0
 
-##### Error response sample
+#### Error response sample
 
 ```
 {
