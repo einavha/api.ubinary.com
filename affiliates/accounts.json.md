@@ -1,9 +1,7 @@
 ﻿## Users (leads) report
 
 
-#### Request
-
-GET http://reports/affiliate/AFF_ID/accounts.json?from=FROM_DATE&to=TO_DATE&PagingIndex=PAGING_INDEX
+GET http://api.ubinary.com/reports/affiliate/**AFF_ID**/accounts.json?from=FROM_DATE&to=TO_DATE&PagingIndex=PAGING_INDEX
 
 where AFF_ID is affiliate id number
 
