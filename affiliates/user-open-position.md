@@ -11,11 +11,9 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     string SessionKey;          // Returned by a successful login   
     string UserId;              // User email or user id (both are supported)
     string UserPassword;        // User password
-    string Symbol;              // Symbol of a desired asset
     int DealId;                 // A coresponding deal id (from get-trading-options)
     EAboveBelow AboveBelow;     // Position direction should be 'Above' or 'Below'
     decimal Stake;              // Position volume in USD
-    TimeSpan Duration;          // Desired position duration
 }
 ```
 
@@ -26,10 +24,8 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     "SessionKey": "47d8fd5711b84a39a696e5c3b79241f9",
     "UserId": "john@ub.com",
     "UserPassword": "111111",
-    "Symbol": "EURUSD",
     "DealId": 948504,
     "AboveBelow": "Above",
-    "Duration": "00:01:00",
     "Stake": 40
 }
 ```

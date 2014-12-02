@@ -64,7 +64,7 @@ where `JSON_RESPONSE` is like
 {
   "TrackingId": "35.58.50",
   "ErrorCode": "Failed",
-  "ErrorMessage": "Affiliate '101': LoginKey '200' is not matched"
+  "ErrorMessage": "Affiliate '101': LoginKey is not matched"
 }
 ```
 

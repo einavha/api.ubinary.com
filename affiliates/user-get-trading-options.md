@@ -45,13 +45,16 @@ class Option
 
 class Deal
 {
-    public int DealId;
-    public DateTime StartAt;
-    public DateTime EndAt;
-    public decimal PayMatch;
-    public decimal PayNoMatch;
-    public decimal MinStake;
-    public decimal MaxStake;
+    int DealId;                   // Deal id (to be used in open position request)
+    DateTime StartAt;             // deal start date
+    DateTime EndAt;               // deal end date
+    bool ExpirationIsFixed;       // if true - positions opened on this deal will expire with the deal
+                                  //    false - position will expire at now + Duration
+    TimeSpan Duration;            // Position duration (if expiration is not fixed)
+    decimal PayMatch;             // Percents (stake) payed if positions wins
+    decimal PayNoMatch;           // Percents (stake) payed if position losses
+    decimal MinStake;             // Minimum stake for this deal
+    decimal MaxStake;             // Maximum stake for this deal
 }
 
 ```
@@ -71,10 +74,23 @@ class Deal
           "DealId": 948504,
           "StartAt": "24-Nov-2014 09:35:00",
           "EndAt": "24-Nov-2014 11:00:00",
+          "ExpirationIsFixed": true,
+          "Duration": "00:00:00",
           "PayMatch": 75,
           "PayNoMatch": 0,
           "MinStake": 20,
           "MaxStake": 100000
+        },
+        {
+          "DealId": 960885,
+          "StartAt": "02-Dec-2014 07:40:00",
+          "EndAt": "02-Dec-2014 15:50:00",
+          "ExpirationIsFixed": false,
+          "Duration": "00:01:00",
+          "PayMatch": 75,
+          "PayNoMatch": 0,
+          "MinStake": 20,
+          "MaxStake": 50000
         }
       ]
     }
@@ -89,7 +105,7 @@ class Deal
 {
   "TrackingId": "37.30.05",
   "ErrorCode": "Failed",
-  "ErrorMessage": "User 'john@ub.com' is not registered"
+  "ErrorMessage": " Affiliate 111111 has no bot associated with"
 }
 ```
 
