@@ -8,6 +8,9 @@ where `JSON_DATA` is like
 {
     string UserEmail;               // user's email
     string UserPassword;            // user's password
+    string RedirectTo;              // optional - redirect user to this URL
+                                    //      URL should be an abolute URL
+                                    //      URL should be within the same domain
 }
 ```
 
@@ -20,7 +23,8 @@ http://api.ubinary.com/trading/user/login?data={"UserEmail":"john@company.com","
 ```json
 {
   "UserEmail": "john@company.com",
-  "UserPassword": "111111"
+  "UserPassword": "111111",
+  "RedirectTo": "http://www.ubinary.com/trade-binary/"
 }
 ```
 
