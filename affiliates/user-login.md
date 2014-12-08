@@ -23,6 +23,13 @@ http://api.ubinary.com/trading/user/login?data={"UserEmail":"john@company.com","
 ```json
 {
   "UserEmail": "john@company.com",
+  "UserPassword": "111111"
+}
+```
+
+```json
+{
+  "UserEmail": "john@company.com",
   "UserPassword": "111111",
   "RedirectTo": "http://www.ubinary.com/trade-binary/"
 }
