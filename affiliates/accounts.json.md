@@ -33,10 +33,12 @@ class Account
 {
     DateTime TransactionDate;   // Lead creation date
     string cTag;                // the ad_server parameter sent with registration API
-    int AccountID;              // Unique account ID
+    int AccountID;              // User id
     string Type;                // 'lead' or 'user' (a user is a lead with one successful login)
     string FirstName;
     string LastName;
+    string Email;               // User's email
+    string CountryCode;         // User's country code (two letters ISO code)
 }
 ```
 

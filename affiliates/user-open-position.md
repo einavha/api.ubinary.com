@@ -67,7 +67,7 @@ where `JSON_RESPONSE` is like
 {
   "TrackingId": "34.29.31",
   "ErrorCode": "UxError",
-  "ErrorMessage": "User 291935 (qa@ub.com): login failed; password is wrong",
+  "ErrorMessage": "User 291935 (john@ub.com): login failed; password is wrong",
   "PositionId": 0,
   "ExpirationAt": "01-Jan-0001 00:00:00"
 }
