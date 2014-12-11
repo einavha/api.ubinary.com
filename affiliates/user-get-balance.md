@@ -44,6 +44,7 @@ where `JSON_RESPONSE` is like
     decimal Balance;              // user's balance
     decimal FreeBalance;          // user's free balance (balance minus open positions)
     decimal Stakes;               // sum of user's open positions
+    object Custom;                // custom (per affiliate) fields
 }
 ```
 
@@ -56,7 +57,8 @@ where `JSON_RESPONSE` is like
   "ErrorMessage": "",
   "Balance": 5148.24,
   "Stakes": 0,
-  "FreeBalance": 5148.24
+  "FreeBalance": 5148.24,
+  "Custom": null
 }
 ```
 
