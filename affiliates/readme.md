@@ -6,11 +6,14 @@
 - [/reports/affiliate/12345/accounts.json](accounts.json.md) - get details of affiliate's users
 - [/reports/affiliate/12345/transactions.json](transactions.json.md) - get details of users's fund transactions
 
+###### User registration / login
+- [/trading/user/login](user-login.md) - user auto-login
+- [/trading/affiliate/12345/user/register](user-register.md) - user registration
+
 ###### Per user information
 - [/trading/affiliate/12345/user/get/balance](user-get-balance.md) - get user's balance
 - [/trading/affiliate/12345/user/get/open/positions](user-get-open-position.md) - get user's open positions
 - [/trading/affiliate/12345/user/get/closed/positions](user-get-closed-position.md) - get user's closed positions
-- [/trading/user/login](user-login.md) - user auto-login
 
 ###### Trading
 - [/trading/affiliate/12345/user/get/trading/options](user-get-trading-options.md) - get trading deals
