@@ -7,8 +7,8 @@
 - [/reports/affiliate/12345/transactions.json](transactions.json.md) - get details of users's fund transactions
 
 ###### User registration / login
-- [/trading/user/login](user-login.md) - user auto-login
 - [/trading/affiliate/12345/user/register](user-register.md) - user registration
+- [/trading/user/login](user-login.md) - user auto-login
 
 ###### Per user information
 - [/trading/affiliate/12345/user/get/balance](user-get-balance.md) - get user's balance
