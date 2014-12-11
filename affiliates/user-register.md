@@ -11,7 +11,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     string PhoneNumber;         // Phone number
     string Email;               // Email
     string Password;            // Password
-    string Tlid;                // optional - Tracking link id ()
+    string Tlid;                // optional - tracking link id
     string FromIp;              // optional - explicit client IP, if not specified IP is taken from request
     string CountryCode;         // optional - explicit country code, if not specified country is based on IP
     string Ctag;                // optional - a free parameter; it comes back in report API
