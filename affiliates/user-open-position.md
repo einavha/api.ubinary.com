@@ -54,7 +54,7 @@ where `JSON_RESPONSE` is like
 {
   "TrackingId": "74.77.97",
   "ErrorCode": "Ok",
-  "ErrorMessage": null,
+  "ErrorMessage": "",
   "PositionId": 821416,
   "ExpirationAt": "24-Nov-2014 10:08:49"
 }
