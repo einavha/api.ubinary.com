@@ -42,6 +42,7 @@
     <None Include="affiliates\login.md" />
     <None Include="affiliates\readme.md" />
     <None Include="affiliates\transactions.json.md" />
+    <None Include="affiliates\user-email-is-available.md" />
     <None Include="affiliates\user-get-balance.md" />
     <None Include="affiliates\user-get-closed-position.md" />
     <None Include="affiliates\user-get-open-position.md" />

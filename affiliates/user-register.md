@@ -78,6 +78,14 @@ where `JSON_RESPONSE` is like
 
 ```json
 {
+  "TrackingId": "55.26.87",
+  "ErrorCode": "Failed",
+  "ErrorMessage": "RC_USER_ALREADY_EXISTS; email 'test-123@ub.com' is already exist"
+}
+```
+
+```json
+{
   "TrackingId": "50.01.14",
   "ErrorCode": "Failed",
   "ErrorMessage": "Unknown country code 'UK'"

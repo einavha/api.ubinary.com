@@ -8,6 +8,7 @@
 
 ###### User registration / login
 - [/trading/affiliate/12345/user/register](user-register.md) - user registration
+- [/trading/user/email/is/available](user-email-is-available.md) - check if email is available for registration
 - [/trading/user/login](user-login.md) - user auto-login
 
 ###### Per user information
