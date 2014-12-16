@@ -6,7 +6,7 @@ where `JSON_DATA` is like
 
 ```C#
 {
-    string Email;               // Email
+    string Email;               // an email to test
 }
 ```
 
@@ -16,7 +16,7 @@ http://api.ubinary.com/trading/user/email/is/available?data=%7B%22Email%22:%22jo
 
 ```json
 {
-  "Email": "john@ub.com"          // email to test
+  "Email": "john@ub.com"
 }
 ```
 
