@@ -43,6 +43,7 @@ where `JSON_RESPONSE` is like
 
 ```C#
 {
+    string TrackingId;          // tracking id of this request (for troubleshooting...)
     UserInfo[] Users;           // an array of retrieved users
     int PagingIndex;            // should be used in a consequent request
     int HasMoreData;            //     if there is more data
