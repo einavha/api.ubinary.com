@@ -50,9 +50,10 @@
     <None Include="affiliates\user-login.md" />
     <None Include="affiliates\user-open-position.md" />
     <None Include="affiliates\user-register.md" />
-    <None Include="cellxpert\affiliates.md" />
+    <None Include="cellxpert\affiliates %28deprecated%29.md" />
     <None Include="cellxpert\funds.md" />
     <None Include="cellxpert\positions.md" />
+    <None Include="cellxpert\update-affiliate.md" />
     <None Include="cellxpert\users.md" />
     <None Include="client-tracking\log-event.md" />
     <None Include="diagnostics\dump.md" />

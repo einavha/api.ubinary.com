@@ -1,6 +1,6 @@
 ﻿## Affiliates
 
-Update affiliate details
+Update affiliate details - **DEPRECATED**
 
 #### Request
 
@@ -11,7 +11,7 @@ where `JSON_DATA` is like
 
 ```C#
 {
-    AffiliateDetails[] Affiliates;      // array of affiliate ditails
+    AffiliateDetails[] Affiliates;      // array of affiliate details
 }
 
 AffiliateDetails
