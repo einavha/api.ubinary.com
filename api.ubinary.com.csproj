@@ -59,6 +59,7 @@
     <None Include="diagnostics\dump.md" />
     <None Include="diagnostics\qm-snapshot.md" />
     <None Include="leads-and-users\SetUserDetails.md" />
+    <None Include="leads-and-users\SetUserDetails2.md" />
     <None Include="README.md" />
     <None Include="rss\feed.md" />
     <None Include="trading\bot-login.md" />

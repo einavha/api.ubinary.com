@@ -1,5 +1,5 @@
 ﻿
-### Set additional user details
+### Set additional user details - DEPRECATED
 
 #### Request
 
