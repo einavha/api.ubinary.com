@@ -26,7 +26,7 @@ where `JSON_DATA` is like
 
 ```json    
 {
-    "UserId": 291935,
+    "UserId": 111222,
     "FirstName": "John",
     "LastName": "Smith",
     "CountryCode": "GB",
@@ -108,9 +108,6 @@ Status | Response body
 where `JSON_RESPONSE` is like
 
 ```C#
-
-enum EligibilityStatus { Eligible, NotEligible }
-
 {
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // "Ok" if request succeeds, short error code if request fails
