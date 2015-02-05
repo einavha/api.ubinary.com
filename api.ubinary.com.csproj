@@ -36,8 +36,6 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="affiliate-reports\accounts.md" />
-    <None Include="affiliate-reports\transactions.md" />
     <None Include="affiliates\accounts.json.md" />
     <None Include="affiliates\login.md" />
     <None Include="affiliates\readme.md" />
@@ -56,20 +54,13 @@
     <None Include="cellxpert\update-affiliate.md" />
     <None Include="cellxpert\users.md" />
     <None Include="client-tracking\log-event.md" />
+    <None Include="deposit-events\get-upgrade-rule.md" />
     <None Include="diagnostics\dump.md" />
     <None Include="diagnostics\qm-snapshot.md" />
-    <None Include="leads-and-users\SetUserDetails.md" />
+    <None Include="leads-and-users\SetUserDetails - deprecated.md" />
     <None Include="leads-and-users\SetUserDetails2.md" />
     <None Include="README.md" />
     <None Include="rss\feed.md" />
-    <None Include="trading\bot-login.md" />
-    <None Include="trading\buy-me-out.md" />
-    <None Include="trading\flip.md" />
-    <None Include="trading\get-trading-options.md" />
-    <None Include="trading\get-user-balance.md" />
-    <None Include="trading\open-position.md" />
-    <None Include="trading\readme.md" />
-    <None Include="trading\user-login.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
