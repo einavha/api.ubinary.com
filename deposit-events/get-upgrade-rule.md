@@ -41,9 +41,9 @@ http://api.ubinary.com/deposit/get/upgrade/rule?data=%7B%22UserId%22:%22123456%2
 
 Default language is english
 
-**English**:  http://api.ubinary.com/en/deposit/get/upgrade/rule?data=JSON_DATA   
-**Arabic**:  http://api.ubinary.com/ar/deposit/get/upgrade/rule?data=JSON_DATA   
-**Russian**:  http://api.ubinary.com/ru/deposit/get/upgrade/rule?data=JSON_DATA   
+*English*:  http://api.ubinary.com/en/deposit/get/upgrade/rule?data=JSON_DATA   
+*Arabic*:  http://api.ubinary.com/ar/deposit/get/upgrade/rule?data=JSON_DATA   
+*Russian*:  http://api.ubinary.com/ru/deposit/get/upgrade/rule?data=JSON_DATA   
 
 
 
