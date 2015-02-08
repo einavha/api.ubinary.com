@@ -57,6 +57,7 @@
     <None Include="deposit-events\get-upgrade-rule.md" />
     <None Include="diagnostics\dump.md" />
     <None Include="diagnostics\qm-snapshot.md" />
+    <None Include="leads-and-users\GetUserDetails.md" />
     <None Include="leads-and-users\SetUserDetails - deprecated.md" />
     <None Include="leads-and-users\SetUserDetails2.md" />
     <None Include="README.md" />

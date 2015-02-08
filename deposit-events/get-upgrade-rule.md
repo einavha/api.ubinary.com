@@ -97,3 +97,4 @@ where `JSON_RESPONSE` is like
 
 #### Access restrictions
 
+None
