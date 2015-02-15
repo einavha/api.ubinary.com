@@ -60,12 +60,12 @@ where `JSON_RESPONSE` is like
     string TrackingId;            // Tracking id for troubleshooting
     string ErrorCode;             // "Ok" if request succeeds, short error code if request fails
     string ErrorMessage;          // error description if request fails
-    decimal UpgradeTo;            // upgrade to this amount
+    decimal UpgradeTo;            // upgrade to this amount, if zero no upgrade message is there
     string UpgrageMsg;            // upgrade message (localized)
 }
 ```
 
-#### Successful response example
+#### Successful response with upgrade message 
 
 ```json
 {
@@ -77,8 +77,19 @@ where `JSON_RESPONSE` is like
 }
 ```
 
+#### Successful response without upgrade message 
 
-##### Unsuccessful response example
+```json
+{
+  "TrackingId": "99.89.96",
+  "ErrorCode": "Ok",
+  "ErrorMessage": "",
+  "UpgradeTo": 0,
+  "UpgrageMsg": null
+}
+```
+
+##### Unsuccessful response
 
 ```json
 {

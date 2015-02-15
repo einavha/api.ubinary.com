@@ -17,7 +17,7 @@ where `JSON_DATA` is like
 
 ```json    
 {
-    "UserId": 111222,
+    "UserId": 111222
 }
 ```
 
