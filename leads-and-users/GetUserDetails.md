@@ -31,12 +31,20 @@ where `JSON_RESPONSE` is like
 
 ```C#
 {
-    string TrackingId;            // Tracking id for troubleshooting
-    string ErrorCode;             // "Ok" if request succeeds, short error code if request fails
-    string ErrorMessage;          // error description if request fails
-    bool HasKycDocuments;         // user uploaded at leaset one of KYC documents
-    bool BlockedKyc;              // user is blocked by KYC policy
-    int KycBlocksInSeconds;       // seconds remain until user is blocked by KYC policy 
+    string TrackingId;                      // Tracking id for troubleshooting
+    string ErrorCode;                       // "Ok" if request succeeds, short error code if request fails
+    string ErrorMessage;                    // error description if request fails
+    bool HasKycDocuments;                   // user uploaded at leaset one of KYC documents
+    bool BlockedKyc;                        // user is blocked by KYC policy
+    KycArgs Kyc;                            // KYC details (see below)
+
+    class KycArgs
+    {
+        bool IsEnabled;                     // KYC logic is enabled / disabled
+        bool UserIsBlocked;                 // user is already blocked by KYC policy
+        bool UserHasAnyDocument;            // user has any document complient with 
+        int UserWillBeBlockedInSeconds;     // seconds remain until user is blocked by KYC policy 
+    }
 }
 ```
 
@@ -44,12 +52,15 @@ where `JSON_RESPONSE` is like
 
 ```json
 {
-    "TrackingId": "12.34.56",
-    "ErrorCode": "Ok",
-    "ErrorMessage": null,
-    "HasKycDocuments": false,
-    "BlockedKyc": false,
-    "KycBlocksInSeconds": 129457
+  "TrackingId": "82.37.38",
+  "ErrorCode": "Ok",
+  "ErrorMessage": "",
+  "Kyc": {
+    "IsEnabled": true,
+    "UserIsBlocked": false,
+    "UserHasAnyDocument": false,
+    "UserWillBeBlockedInSeconds": 129457
+  }
 }
 ```
 
