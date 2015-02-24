@@ -11,7 +11,8 @@
     <RootNamespace>api.ubinary.com</RootNamespace>
     <AssemblyName>api.ubinary.com</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -37,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="affiliates\accounts.json.md" />
+    <None Include="affiliates\lead-register.md" />
     <None Include="affiliates\login.md" />
     <None Include="affiliates\readme.md" />
     <None Include="affiliates\transactions.json.md" />
