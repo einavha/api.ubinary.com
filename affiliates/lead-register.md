@@ -10,7 +10,6 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     string LastName;            // Last name
     string PhoneNumber;         // Phone number
     string Email;               // Email
-    string Password;            // Password
     string Tlid;                // optional - tracking link id
     string FromIp;              // optional - explicit client IP, if not specified IP is taken from request
     string CountryCode;         // optional - explicit country code, if not specified country is based on IP
@@ -20,7 +19,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
 
 ##### A valid request example
 
-http://api.ubinary.com/trading/affiliate/12345/lead/register?data=%7B%22FirstName%22:%22TestJohn%22,%22LastName%22:%22TestSmith%22,%22PhoneNumber%22:%22044-1234567%22,%22Email%22:%22test-12317@ub.com%22,%22Tlid%22:%22abcd-efgh-ighk%22,%22Password%22:%22111111%22,%22CountryCode%22:%22%22,%22FromIp%22:%22%22,%22Ctag%22:%22%22%7D
+http://api.ubinary.com/trading/affiliate/12345/lead/register?data=%7B%22FirstName%22:%22TestJohn%22,%22LastName%22:%22TestSmith%22,%22PhoneNumber%22:%22044-1234567%22,%22Email%22:%22test-12317@ub.com%22,%22Tlid%22:%22abcd-efgh-ighk%22,%22CountryCode%22:%22%22,%22FromIp%22:%22%22,%22Ctag%22:%22%22%7D
 
 ```json
 {
@@ -29,7 +28,6 @@ http://api.ubinary.com/trading/affiliate/12345/lead/register?data=%7B%22FirstNam
   "PhoneNumber": "044-1234567",
   "Email": "test-12317@ub.com",
   "Tlid": "abcd-efgh-ighk",
-  "Password": "111111",
   "CountryCode": "GB",
   "FromIp": "211.148.218.20",
   "Ctag": "lead.JKFDSIE3243-4V432"
