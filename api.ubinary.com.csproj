@@ -55,6 +55,7 @@
     <None Include="cellxpert\positions.md" />
     <None Include="cellxpert\update-affiliate.md" />
     <None Include="cellxpert\users.md" />
+    <None Include="charts\get-tick-quotes.md" />
     <None Include="client-tracking\log-event.md" />
     <None Include="deposit-events\get-upgrade-rule.md" />
     <None Include="diagnostics\dump.md" />
