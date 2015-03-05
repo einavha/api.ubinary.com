@@ -20,8 +20,8 @@ where `JSON_DATA` is like
 ```json    
 {
     "Symbol":"EURUSD",
-    "MinDate":"03/04/2015 08:00:00",
-    "MaxDate":"03/04/2015 23:56:01"
+    "MinDate":"03/24/2015 08:00:00",
+    "MaxDate":"03/24/2015 08:05:00"
 }
 ```
 
