@@ -10,8 +10,8 @@ where `JSON_DATA` is like
 ```C#
 {
     string Symbol;                          // symbol (six characters)
-    string MinDate;                         // from date
-    string MaxDate;                         // to date
+    string MinDate;                         // from date, format: "MM/dd/yyyy HH:mm:ss"
+    string MaxDate;                         // to date, format: "MM/dd/yyyy HH:mm:ss"
 }
 ```
 
