@@ -44,7 +44,7 @@ where `JSON_RESPONSE` is like
     {
         string ErrorCode;                   // always "RC_OK"
         string ErrorMessage;                // always empty
-        DataArgs Data;
+        DataArgs[] Data;
     }
 
     class DataArgs
@@ -77,20 +77,22 @@ where `JSON_RESPONSE` is like
     "AggregatedQuotesProvider": {
         "ErrorCode": "RC_OK",
         "ErrorMessage": "",
-        "Data":{
-            "Symbol": "EURUSD",
-            "Pip": 5.0,
-            "Points": 1,
-            "AggregatedQuotes": [
-                {
-                    "cRate": 1.10935,
-                    "oRate": 1.10935,
-                    "hRate": 1.10935,
-                    "lRate": 1.10935,
-                    "date": "20150305 13:41:19"
-                }
-            ]
-        }
+        "Data": [
+            {
+                "Symbol": "EURUSD",
+                "Pip": 5.0,
+                "Points": 1,
+                "AggregatedQuotes": [
+                    {
+                        "cRate": 1.10935,
+                        "oRate": 1.10935,
+                        "hRate": 1.10935,
+                        "lRate": 1.10935,
+                        "date": "20150305 13:41:19"
+                    }
+                ]
+            }
+        ]
     }
 }
 ```
