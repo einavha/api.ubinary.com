@@ -49,8 +49,8 @@ enum Direction { Above, Below }
 class Position
 {
     int PositionId;
+    string Asset;
     string ProductName;
-    decimal Symbol;
     decimal Stake;
     Direction Direction;
     DateTime StartedAt;

@@ -14,4 +14,4 @@ where
 
 ##### A valid request example
 
-http://api.dev.ubinary.com/bm/client/event/424324/34-32-54/1/registration/LoadLibs/done
+http://api.ubinary.com/bm/client/event/424324/34-32-54/1/registration/LoadLibs/done
