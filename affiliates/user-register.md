@@ -11,13 +11,25 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     string PhoneNumber;         // Phone number
     string Email;               // Email
     string Password;            // Password
-    string Tlid;                // optional - tracking link id
+    string LanguageCode;        // optional - user preferred language (see details below)
+    ulong Tlid;                 // optional - tracking link id (64 bits)
     string FromIp;              // optional - explicit client IP, if not specified IP is taken from request
     string CountryCode;         // optional - explicit country code, if not specified country is based on IP
     string Ctag;                // optional - a free parameter; it comes back in report API
     string AdData;              // optional - a free parameter (usually information about a campaign)
 }
 ```
+
+LanguageCode | Language
+-------------|--------------
+En           | English
+Ar           | Arabic
+Ru           | Russian
+Fr           | French
+De           | Dutch
+Es           | Spanish
+Cn           | Chinese
+
 
 ##### A valid request example
 
@@ -29,7 +41,8 @@ http://api.ubinary.com/trading/affiliate/12345/user/register?data=%7B%22FirstNam
   "LastName": "TestSmith",
   "PhoneNumber": "044-1234567",
   "Email": "test-12317@ub.com",
-  "Tlid": "abcd-efgh-ighk",
+  "LanguageCode": "en",
+  "Tlid": "111222333444555666",
   "Password": "111111",
   "CountryCode": "GB",
   "FromIp": "211.148.218.20",

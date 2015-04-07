@@ -2,6 +2,10 @@
 
 #### Availible APIs
 
+**NOTE**: 
+You should build your HTTP request in a proper way.
+For example, HTTP requests without any HTTP header probably will be blocked.
+
 ###### User reports
 - [/reports/affiliate/12345/accounts.json](accounts.json.md) - get details of affiliate's users
 - [/reports/affiliate/12345/transactions.json](transactions.json.md) - get details of users's fund transactions
@@ -21,7 +25,6 @@
 - [/trading/affiliate/12345/user/get/trading/options](user-get-trading-options.md) - get trading deals
 - [/trading/affiliate/12345/login](login.md) - affiliate's login
 - [/trading/affiliate/12345/user/open/position](user-open-position.md) - open position for a user
-
 
 #### Opening position (bot trading)
 - Affiliate has to login in order to open positions - [Login API](login.md)
