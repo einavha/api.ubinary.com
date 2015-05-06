@@ -17,6 +17,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
     string CountryCode;         // optional - explicit country code, if not specified country is based on IP
     string Ctag;                // optional - a free parameter; it comes back in report API
     string AdData;              // optional - a free parameter (usually information about a campaign)
+	string Comment;				// optional - a registration comment
 }
 ```
 
