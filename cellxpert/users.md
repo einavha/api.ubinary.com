@@ -12,11 +12,16 @@ GET http://api.ubinary.com/online/integration/cellxpert/users?data=JSON_DATA
 where `JSON_DATA` is like
 
 ```C#
+enum EOrderBy
+{
+    UserId, UpdateDate
+}
+
 {
     DateTime From;              // starting from this date
     DateTime To;                // until this date
     int PagingIndex;            // user index to start with in case there are more results
-    string Token;               // a validation token
+    EOrderBy OrderBy;			// optional (default is UserId)
 }
 ```
 
@@ -26,8 +31,14 @@ where `JSON_DATA` is like
 {
   "From": "2014-04-21 00:00:00",
   "To": "2014-04-21 23:00:00",
+  "PagingIndex": 0
+}
+
+{
+  "From": "2014-04-21 00:00:00",
+  "To": "2014-04-21 23:00:00",
   "PagingIndex": 0,
-  "Token": ""
+  "OrderBy": "UpdateDate"
 }
 ```
 
