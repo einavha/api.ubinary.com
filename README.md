@@ -16,3 +16,8 @@ Ubinary public API documentation tree
 [User login](trading/user-login.md)  
 [Set user details](leads-and-users/SetUserDetails.md)
 
+#### Deposits
+- [/deposit/add] (ChargeCreditCard.md) - Charge Credit Card
+- [/creditcard/add] (AddCreditCard.md) - Add Credit Card
+- [/deposit/getuserdeposits] (GetUserDeposits.md) - Get User Deposits
+
