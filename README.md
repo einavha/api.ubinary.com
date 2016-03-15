@@ -17,7 +17,7 @@ Ubinary public API documentation tree
 [Set user details](leads-and-users/SetUserDetails.md)
 
 ### Deposits
-[Charge Credit Card] (deposits/ChargeCreditCard.md)  
-[Add Credit Card] (deposits/AddCreditCard.md)  
-[Get User Deposits] (deposits/GetUserDeposits.md)  
+[Charge Credit Card] (affiliates/ChargeCreditCard.md)  
+[Add Credit Card] (affiliates/AddCreditCard.md)  
+[Get User Deposits] (affiliates/GetUserDeposits.md)  
 
