@@ -31,3 +31,8 @@ For example, HTTP requests without any HTTP header probably will be blocked.
 - Each login starts a session (the session has an expiration timeout)
 - During the session affiliate can open positions - [Open position API](user-open-position.md)
 
+#### Deposits
+- [/deposit/add] (ChargeCreditCard.md) - Charge Credit Card
+- [/creditcard/add] (AddCreditCard.md) - Add Credit Card
+- [/deposit/getuserdeposits] (GetUserDeposits.md) - Get User Deposits
+

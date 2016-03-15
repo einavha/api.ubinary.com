@@ -2,9 +2,6 @@
 
 Get all deposits of user
 
-[Try it online](http://api.ubinary.com/nunit/page/affiliates.html)
-
-
 #### Request
 
 GET http://api.ubinary.com/deposit/getuserdeposits?data=JSON_DATA
