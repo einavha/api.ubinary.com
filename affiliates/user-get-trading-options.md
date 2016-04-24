@@ -12,7 +12,7 @@ where `12345` - is your affiliate id and `JSON_DATA` is like
 
 ##### A valid request example
 
-http://api.ubinary.com/trading/affiliate/12345/user/get/open/positions?data={"UserId":""} 
+http://api.ubinary.com/trading/affiliate/12345/user/get/trading/options?data={"UserId":""} 
 
 ```json
 {
