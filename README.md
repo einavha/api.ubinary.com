@@ -15,6 +15,7 @@ Ubinary public API documentation tree
 ### Leads and users
 [User login](trading/user-login.md)  
 [Set user details](leads-and-users/SetUserDetails.md)
+[Get user position](leads-and-users/GetUserPostion.md)
 
 ### Deposits
 [Charge Credit Card] (affiliates/ChargeCreditCard.md)  
